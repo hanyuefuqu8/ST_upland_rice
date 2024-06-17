@@ -3,9 +3,9 @@ for i in $(ls *.gem)
 do
 name=${i%%.*}
 B=40
-perl /hwfssz1/ST_EARTH/Reference/ST_AGRIC/USER/chenxiaoli/Software/Stereomics/TransBIN.pl $i  -size $B > TransBIN$B$name.txt
+perl TransBIN.pl $i  -size $B > TransBIN$B$name.txt
 perl -ane '{print "$F[0]_$F[1]\t$F[2]\t$F[3]\n"}' TransBIN$B$name.txt > MBIN$B$name.txt
-perl /hwfssz1/ST_EARTH/Reference/ST_AGRIC/USER/chenxiaoli/Software/Stereomics/trans.pl MBIN$B$name.txt > BIN$B$name.csv
+perl trans.pl MBIN$B$name.txt > BIN$B$name.csv
 done
 
 ls *.csv>file
