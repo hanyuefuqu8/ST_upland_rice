@@ -3,7 +3,7 @@ Scripts used for spatial transcriptomics of upland rice
 
 The original expression matrix was used for following analysis.
 
-1.The modified gff file was generated using gtf.generaator in gff_edit/
+1.The modified gff file was generated using gtf.generator in gff_edit/
 
 2.Data integration was performed using merge.sh
 
